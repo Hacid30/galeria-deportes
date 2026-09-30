@@ -84,7 +84,7 @@ function cerrar() {
 function actualizar() {
     const now = new Date();
     const fecha = now.toLocaleDateString('es-Es', { day: '2-digit', month: '2-digit', year: 'numeric' });
-    const hora = now.toLocaleTimeString('es-Es', { hour: '2-digit', minute: '2-digit' });
+    const hora = now.toLocaleTimeString('es-Es', { hour: '2-digit', minute: '2-digit', hour12: true });
     document.getElementById('fecha-hora').innerHTML = `<p>${hora}</p><p>${fecha}</p>`;
 }
 
